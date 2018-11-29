@@ -23,7 +23,7 @@ const answers = (sequelize, DataTypes) => {
     });
     Answers.belongsTo(models.Users, {
       foreignKey: 'userId',
-      as: 'answer',
+      as: 'user',
     });
   };
   return Answers;
